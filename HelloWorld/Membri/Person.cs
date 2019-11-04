@@ -6,8 +6,8 @@ namespace HelloWorld.Nuova_cartella
 {
     class Person
     {
-        public string nome;
-        public string cognome;
+        public string name;
+        public string surname;
         public int eta;
         public string sesso;
         public int altezza;
@@ -15,15 +15,34 @@ namespace HelloWorld.Nuova_cartella
 
         public Person(string nome, string cognome)
         {
-            this.nome = nome;
-            this.cognome = cognome;
+            this.name = nome;
+            this.surname = cognome;
             this.sesso = "sconosciuto";
         }
 
         public string Anagrafica()
         {
-            string anagrafica = this.nome + this.cognome;
+           
+            string anagrafica = this.name + " " + this.surname;
             return anagrafica;
+        }
+
+        public Person(string name, string surname, int height, double weight)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.peso = weight;
+            this.altezza = height;
+
+        }
+           
+        public double calcBMI()
+        {
+            double heightInMeters = (double)this.altezza / 100;
+            double bMI = this.peso / heightInMeters * heightInMeters;
+
+            return bMI;
+
         }
     }
 }

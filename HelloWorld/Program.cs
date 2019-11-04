@@ -14,10 +14,13 @@ namespace HelloWorld
 
             Person giovanni = luca;
 
-            giovanni.nome = "Giovanni";
+            giovanni.name = "Giovanni";
 
             Console.WriteLine(luca.Anagrafica());
             Console.WriteLine(giovanni.Anagrafica());
+
+            Person luigi = new Person("luigi", "bianchi", 180, 90);
+            Console.WriteLine(luigi.calcBMI());
         }
     }
 }
