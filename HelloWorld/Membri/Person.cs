@@ -12,9 +12,10 @@ namespace HelloWorld.Nuova_cartella
         public string sesso;
         public int altezza;
         public double peso;
-        public public Person(string nome, string cognome)
+
+        public Person(string nome, string cognome)
         {
-            this.nome = nome
+            this.nome = nome;
                 this.cognome = cognome;
             this.sesso = "sconosciuto";
         }

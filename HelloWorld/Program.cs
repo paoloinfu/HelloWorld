@@ -8,7 +8,14 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             Person p = new Person("Luca", "Lippi");
+            luca.eta = 18;
+
             Console.WriteLine(p.Anagrafica());
+
+            Person giovanni = luca;
+            giovanni.nome = "Giovanni";
+
+
         }
     }
 }
