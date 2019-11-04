@@ -8,7 +8,7 @@ namespace HelloWorld.Nuova_cartella
     {
         public string nome;
         public string cognome;
-        public int età;
+        public int eta;
         public string sesso;
         public int altezza;
         public double peso;
@@ -16,7 +16,7 @@ namespace HelloWorld.Nuova_cartella
         public Person(string nome, string cognome)
         {
             this.nome = nome;
-                this.cognome = cognome;
+            this.cognome = cognome;
             this.sesso = "sconosciuto";
         }
 

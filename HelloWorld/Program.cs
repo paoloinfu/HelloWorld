@@ -7,15 +7,17 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Person p = new Person("Luca", "Lippi");
+            Person luca = new Person("Luca", "Lippi");
             luca.eta = 18;
 
-            Console.WriteLine(p.Anagrafica());
+            Console.WriteLine(luca.Anagrafica());
 
             Person giovanni = luca;
+
             giovanni.nome = "Giovanni";
 
-
+            Console.WriteLine(luca.Anagrafica());
+            Console.WriteLine(giovanni.Anagrafica());
         }
     }
 }
