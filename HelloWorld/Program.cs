@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloWorld.Nuova_cartella;
+using System;
 
 namespace HelloWorld
 {
@@ -6,7 +7,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person p = new Person("Luca", "Lippi");
+            Console.WriteLine(p.Anagrafica());
         }
     }
 }
